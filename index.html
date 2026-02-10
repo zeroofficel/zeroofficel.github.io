@@ -3,80 +3,131 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Winnser – Quiz & Rewards App</title>
+
+<title>Winnser – Knowledge, Competition & Rewards</title>
+
+<meta name="description" content="Winnser is a professional quiz and rewards application focused on knowledge, fair competition, and responsible advertising.">
+<meta name="robots" content="index, follow">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f7fb;
-    color: #333;
-    line-height: 1.7;
+:root {
+    --royal-blue: #0a1fa3;
+    --royal-blue-light: #1e3aff;
+    --gold: #d4af37;
+    --dark: #0f172a;
+    --gray: #475569;
+    --bg: #f8fafc;
 }
 
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--dark);
+    line-height: 1.8;
+}
+
+/* HEADER */
 header {
-    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    background: linear-gradient(135deg, var(--royal-blue), var(--royal-blue-light));
     color: white;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 46px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+header span {
+    color: var(--gold);
 }
 
 header p {
-    font-size: 18px;
-    max-width: 700px;
+    font-size: 19px;
+    max-width: 760px;
     margin: auto;
+    color: #e5e7eb;
 }
 
+/* SECTIONS */
 section {
-    padding: 60px 20px;
-    max-width: 1100px;
+    padding: 70px 20px;
+    max-width: 1150px;
     margin: auto;
 }
 
 .section-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #4f46e5;
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: var(--royal-blue);
+    position: relative;
 }
 
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: var(--gold);
+    display: block;
+    margin-top: 10px;
+}
+
+/* CARDS */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
 }
 
 .card {
     background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+    padding: 30px;
+    border-radius: 14px;
+    border-top: 5px solid var(--gold);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
 }
 
 .card h3 {
     margin-top: 0;
-    color: #111;
+    color: var(--royal-blue);
+    font-size: 20px;
 }
 
+.card p {
+    color: var(--gray);
+}
+
+/* TEXT SECTIONS */
+section p {
+    max-width: 900px;
+    font-size: 16.5px;
+    color: var(--gray);
+}
+
+/* FOOTER */
 footer {
-    background-color: #111827;
-    color: #d1d5db;
-    padding: 40px 20px;
+    background-color: var(--dark);
+    color: #cbd5f5;
+    padding: 45px 20px;
     text-align: center;
 }
 
+footer p {
+    margin: 10px 0;
+}
+
 footer a {
-    color: #9ca3af;
+    color: var(--gold);
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 12px;
+    font-weight: 500;
 }
 
 footer a:hover {
-    color: white;
+    text-decoration: underline;
 }
 </style>
 </head>
@@ -84,102 +135,105 @@ footer a:hover {
 <body>
 
 <header>
-    <h1>Winnser</h1>
+    <h1>Winn<span>ser</span></h1>
     <p>
-        Winnser is a quiz and rewards mobile application that combines knowledge,
-        entertainment, and fair competition in one simple experience.
+        A professional quiz and rewards platform designed to promote knowledge,
+        fair competition, and a high-quality user experience supported by
+        responsible advertising.
     </p>
 </header>
 
 <section>
     <h2 class="section-title">About Winnser</h2>
     <p>
-        Winnser is designed for users who enjoy answering quiz questions, learning new
-        information, and competing with others in a fair and transparent system.
-        The app focuses on user engagement, educational value, and responsible advertising.
+        Winnser is a knowledge-based quiz application created for users who value
+        learning, intellectual challenge, and transparent competition.
+        The platform is built with long-term sustainability in mind, prioritizing
+        content quality, user trust, and compliance with international advertising standards.
     </p>
     <p>
-        Our goal is to create a trustworthy platform where users can test their knowledge,
-        improve their skills, and enjoy a gamified learning experience.
+        Unlike low-effort or automated platforms, Winnser focuses on real user engagement
+        and meaningful interactions, ensuring every screen provides value and purpose.
     </p>
 </section>
 
 <section>
-    <h2 class="section-title">How the App Works</h2>
+    <h2 class="section-title">How Winnser Works</h2>
     <div class="card-grid">
         <div class="card">
-            <h3>Create an Account</h3>
+            <h3>User Registration</h3>
             <p>
-                Users choose a username and create a profile to start playing.
-                No complex setup is required.
+                Users create a unique profile to access quizzes and track their progress
+                in a secure and transparent environment.
             </p>
         </div>
         <div class="card">
-            <h3>Answer Quiz Questions</h3>
+            <h3>Educational Quizzes</h3>
             <p>
-                Each quiz question is carefully selected to provide educational
-                and entertainment value.
+                Questions are curated to encourage learning, critical thinking,
+                and continuous improvement.
             </p>
         </div>
         <div class="card">
-            <h3>Earn Points</h3>
+            <h3>Points & Progress</h3>
             <p>
-                Correct answers and completed actions reward users with points
-                that contribute to weekly rankings.
+                Users earn points based on their activity and accuracy, contributing
+                to personal achievements and weekly rankings.
             </p>
         </div>
         <div class="card">
-            <h3>Weekly Leaderboards</h3>
+            <h3>Leaderboards</h3>
             <p>
-                Players compete in weekly leaderboards based on total points earned.
+                Weekly leaderboards highlight top performers and promote healthy,
+                fair competition among users.
             </p>
         </div>
     </div>
 </section>
 
 <section>
-    <h2 class="section-title">Advertising Policy</h2>
+    <h2 class="section-title">Advertising & Monetization</h2>
     <p>
-        Winnser uses advertising responsibly to support the app.
-        Ads are never shown on empty screens or without meaningful content.
-        Advertisements appear only as part of a clear user flow and always respect
-        Google AdSense and AdMob policies.
+        Advertising on Winnser is implemented responsibly and ethically.
+        Ads are never displayed on empty, misleading, or low-value screens.
+        Every advertisement appears alongside meaningful content and within
+        a clear, user-initiated flow.
     </p>
     <p>
-        Users are informed when ads are part of the experience, and no misleading
-        or forced interactions are used.
+        The platform strictly follows Google AdSense and AdMob policies to ensure
+        compliance, transparency, and a positive experience for both users and advertisers.
     </p>
 </section>
 
 <section>
     <h2 class="section-title">Privacy Policy</h2>
     <p>
-        Winnser respects user privacy. We do not sell personal data to third parties.
-        Any collected information is used solely to improve app functionality
-        and user experience.
+        Winnser respects user privacy and data protection principles.
+        Personal information is collected only when necessary and is never sold
+        or misused.
     </p>
     <p>
-        Advertising partners may use cookies or similar technologies in accordance
-        with Google policies.
+        Third-party services, including advertising partners, may use cookies or
+        similar technologies in accordance with applicable Google policies.
     </p>
 </section>
 
 <section>
     <h2 class="section-title">Terms of Use</h2>
     <p>
-        By using Winnser, users agree to use the application fairly and responsibly.
-        Any attempt to manipulate scores, abuse ads, or exploit the system may
-        result in account suspension.
+        By using Winnser, users agree to act responsibly and fairly.
+        Any form of abuse, manipulation, or violation of platform rules may result
+        in account restrictions or suspension.
     </p>
 </section>
 
 <section>
-    <h2 class="section-title">Contact</h2>
+    <h2 class="section-title">Contact Information</h2>
     <p>
-        If you have any questions or concerns, please contact us:
+        For support, inquiries, or policy-related questions, please contact us:
     </p>
     <p>
-        📧 Email: <strong>support@winnser.app</strong>
+        <strong>Email:</strong> support@winnser.app
     </p>
 </section>
 
